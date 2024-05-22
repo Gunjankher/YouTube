@@ -1,13 +1,16 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { FaYoutube } from "react-icons/fa";
+import Home from './pages/Home';
 
-import './App.css'
+
+
 
 function App() {
-  
+
 
   return (
     <>
-    <h1 className='text-red-500' >hello</h1>
+<Home />
     </>
   )
 }

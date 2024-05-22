@@ -5,6 +5,7 @@ import React from 'react'
     type = "button",
     bgcolor = "bg-blue-logo",
     textcolor = "",
+    className = "",
     ...props
 
 

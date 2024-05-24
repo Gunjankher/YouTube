@@ -46,7 +46,7 @@ export default function SideBar() {
     ];
 
     return (
-  <div className='w-2/12 bg-slate-600 h-screen'>
+  <div className='w-2/12 bg-[#0F0F0F] h-screen'>
 
 <ul className='border-b-2 border-gray-700'>
 {mainLinks.map(({icon,name})=>{

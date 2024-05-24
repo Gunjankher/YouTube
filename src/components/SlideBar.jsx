@@ -46,6 +46,36 @@ export default function SideBar() {
     ];
 
     return (
-      <></>
+  <div className='w-2/12 bg-slate-600 h-screen'>
+
+<ul>
+{mainLinks.map(({icon,name})=>{
+return (
+    <li key={name}>
+{icon}
+{name}
+
+</li>
+)
+
+
+
+})}
+</ul>
+<ul>
+{otherLinks.map(({icon,name})=>{
+return (
+    <li key={name}>
+{icon}
+{name}
+
+</li>
+)
+
+
+
+})}
+</ul>
+  </div>
     )
 }

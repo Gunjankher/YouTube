@@ -48,34 +48,37 @@ export default function SideBar() {
     return (
   <div className='w-2/12 bg-slate-600 h-screen'>
 
-<ul>
+<ul className='border-b-2 border-gray-700'>
 {mainLinks.map(({icon,name})=>{
 return (
-    <li key={name}>
-{icon}
-{name}
+    <li key={name} className='flex gap-x-3 text-[20px] {`pl-6 py-3 hover:bg-zinc-700 px-3 ${name === "Home" ?"bg-zinc-600" : " "} rounded-xl  `}'>
+ <a href='#' className='flex items-center gap-5'> 
+                    {icon}
+                    <span className='text-sm tracking-wider'>{name}</span>
+                    </a>
 
 </li>
 )
-
-
-
 })}
+
 </ul>
-<ul>
+
+<ul className='border-b-2 border-gray-700'>
 {otherLinks.map(({icon,name})=>{
 return (
-    <li key={name}>
-{icon}
-{name}
+    <li key={name} className='flex gap-x-3 text-[20px] {`pl-6 py-3 hover:bg-zinc-700 px-3 ${name === "Home" ?"bg-zinc-600" : " "} rounded-xl  `}'>
+ <a href='#' className='flex items-center gap-5'> 
+                    {icon}
+                    <span className='text-sm tracking-wider'>{name}</span>
+                    </a>
 
 </li>
 )
-
-
-
 })}
+
 </ul>
+
+
   </div>
     )
 }

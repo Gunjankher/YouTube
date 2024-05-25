@@ -9,6 +9,7 @@ import { FaMicrophone } from "react-icons/fa";
 import { FaVideo } from "react-icons/fa";
 import { FaBell } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
+import SideBar from './SlideBar';
 
 function Navbar() {
   return (

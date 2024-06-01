@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { getHomepageVideos } from "./reducers/getHomepageVideos";
 
 const initialState = {
-video : [],
+videos : [],
 currentPlaying : null,
 SearchTerm : "",
 SearchResults : [],
@@ -18,6 +19,11 @@ initialState ,
 
 reducers :{
 
+},
+extraReducers:(builder) =>{
+    builder.addCase(getHomepageVideos.fulfilled,(state,action)=>{
+        
+    })
 }
 
 

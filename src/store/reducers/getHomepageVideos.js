@@ -1,6 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-import parseData from "../../utilis/parseData.jsx";
+import {parseData} from '../../utilis/parseData'
 
 const API_KEY = import.meta.env.VITE_APP_YOUTUBE_DATA_API_KEY
 
